@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Подсолнух Парк | Коттеджный поселок бизнес-класса</title>
+    <meta name="description" content="Коттеджный поселок бизнес-класса Подсолнух Парк в Истринском районе." />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1a2530', // Deep charcoal
+              secondary: '#2C3A47',
+              accent: '#C49B61', // Updated Gold
+              accentHover: '#B08A54',
+              light: '#F9FAFB',
+              surface: '#F3F4F6'
+            },
+            fontFamily: {
+              sans: ['"IBM Plex Sans"', 'sans-serif'],
+              serif: ['"Playfair Display"', 'serif'],
+            },
+            backgroundImage: {
+              'hero-pattern': "url('https://images.unsplash.com/photo-1600596542815-e32c8cc13bc9?q=80&w=2564&auto=format&fit=crop')",
+              'forest-pattern': "url('https://images.unsplash.com/photo-1448375240586-dfd8d395ea6c?q=80&w=2670&auto=format&fit=crop')",
+              'interior-pattern': "url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2574&auto=format&fit=crop')",
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 1s ease-out forwards',
+              'fade-in': 'fadeIn 1.5s ease-out forwards',
+              'scale-slow': 'scaleSlow 25s linear infinite alternate',
+              'slide-up': 'slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(40px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              fadeIn: {
+                '0%': { opacity: '0' },
+                '100%': { opacity: '1' },
+              },
+              scaleSlow: {
+                '0%': { transform: 'scale(1)' },
+                '100%': { transform: 'scale(1.15)' },
+              },
+              slideUp: {
+                '0%': { transform: 'translateY(100%)' },
+                '100%': { transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #1A232C;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #C49B61;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #B08A54;
+      }
+      
+      .text-balance {
+        text-wrap: balance;
+      }
+      
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0",
+    "react-dom": "https://esm.sh/react-dom@^19.2.1",
+    "papaparse": "https://esm.sh/papaparse@5.4.1"
+  }
+}
+</script>
+</head>
+  <body class="antialiased text-primary bg-white selection:bg-accent selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
