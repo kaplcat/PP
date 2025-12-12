@@ -19,7 +19,7 @@ export const Section: React.FC<SectionProps> = ({ id, className = '', children, 
     >
       <div 
         ref={elementRef as React.RefObject<HTMLDivElement>}
-        className={`${fullWidth ? 'w-full' : 'max-w-[1400px] mx-auto px-6 md:px-12'} transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
+        className={`${fullWidth ? 'w-full' : 'max-w-[1400px] mx-auto px-6 md:px-10'} transition-all duration-1000 ease-out ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}`}
       >
         {children}
       </div>

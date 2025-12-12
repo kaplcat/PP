@@ -15,7 +15,7 @@ export const Hero: React.FC = () => {
       {/* Content Container */}
       {/* pt-[120px] accounts for the fixed header height. 
           flex & justify-center ensures content is centered in the REMAINING vertical space */}
-      <div className="relative z-10 h-full flex flex-col pt-[100px] md:pt-[120px] pb-12 max-w-[1600px] mx-auto px-6 md:px-12">
+      <div className="relative z-10 h-full flex flex-col pt-[100px] md:pt-[120px] pb-12 max-w-[1600px] mx-auto px-6 md:px-10">
         <div className="flex-1 flex flex-col justify-center">
           <div className="max-w-7xl">
             

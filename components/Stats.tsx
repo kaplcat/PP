@@ -11,7 +11,7 @@ const stats = [
 export const Stats: React.FC = () => {
   return (
     <Section id="about">
-      <div className="flex flex-col lg:grid lg:grid-cols-12 gap-12 lg:gap-24 items-start">
+      <div className="flex flex-col lg:grid lg:grid-cols-12 gap-10 lg:gap-24 items-start">
         {/* Left: Content */}
         <div className="lg:col-span-5 flex flex-col justify-center space-y-16">
           <div>
@@ -33,7 +33,7 @@ export const Stats: React.FC = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-x-12 gap-y-16 pt-4">
+          <div className="grid grid-cols-2 gap-x-10 gap-y-16 pt-4">
             {stats.map((stat) => (
               <div key={stat.id} className="group flex flex-col">
                 <div className="font-serif text-5xl md:text-6xl text-primary font-light leading-none mb-5 group-hover:text-accent transition-colors duration-500">

@@ -44,7 +44,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
           : 'bg-transparent py-8 border-transparent'
       }`}
     >
-      <div className="max-w-[1600px] mx-auto px-6 md:px-12 flex justify-between items-center">
+      <div className="max-w-[1600px] mx-auto px-6 md:px-10 flex justify-between items-center">
         {/* Logo */}
         <a href="/" onClick={(e) => handleNavClick(e, 'home')} className="relative z-50 group">
           <img 
