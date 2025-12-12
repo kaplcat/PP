@@ -39,7 +39,7 @@ export const Materials: React.FC = () => {
           </p>
         </div>
 
-        <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-10">
           {materials.map((item, idx) => (
             <div key={idx} className="group border-l border-gray-100 pl-8 hover:border-accent transition-colors duration-500">
               <item.icon className="w-8 h-8 text-primary mb-6 group-hover:text-accent transition-colors duration-300" strokeWidth={1.5} />

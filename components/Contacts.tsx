@@ -35,7 +35,7 @@ export const Contacts: React.FC = () => {
                       </a>
                       <button 
                           onClick={() => setIsModalOpen(true)}
-                          className="mt-4 px-10 py-5 bg-white text-primary font-medium uppercase tracking-widest text-xs hover:bg-accent hover:text-white transition-all duration-300"
+                          className="mt-4 px-10 py-5 bg-white text-primary font-medium uppercase tracking-widest text-xs hover:bg-accent hover:text-white transition-all duration-300 rounded-full"
                       >
                           Заказать звонок
                       </button>
@@ -43,7 +43,7 @@ export const Contacts: React.FC = () => {
               </div>
 
               {/* Grid Content */}
-              <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-24">
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-10 mb-24">
                   <div className="md:col-span-1">
                       <img src="https://static.tildacdn.com/tild3038-6331-4437-b561-303431646466/Logo_white.png" alt="Logo" className="h-8 mb-8 opacity-50" />
                       <p className="text-gray-500 text-sm leading-relaxed max-w-[200px]">

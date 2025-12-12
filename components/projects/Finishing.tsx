@@ -10,7 +10,7 @@ export const Finishing: React.FC = () => {
         <h2 className="font-serif text-4xl md:text-5xl text-white mt-6">Варианты отделки</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {/* Rough (Chernovaya) */}
         <div className="relative group bg-white/5 border border-white/10 p-8 hover:border-accent/50 transition-colors duration-500">
           <div className="w-12 h-12 bg-white/10 rounded-full flex items-center justify-center text-white mb-8 group-hover:bg-accent group-hover:text-white transition-colors duration-300">

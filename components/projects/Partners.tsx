@@ -42,9 +42,9 @@ export const Partners: React.FC = () => {
          <h2 className="font-serif text-4xl md:text-5xl text-primary">Знак качества</h2>
       </div>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-gray-100 border border-gray-100">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
         {partners.map((partner, idx) => (
-          <div key={idx} className="group bg-white p-12 flex flex-col items-start justify-between min-h-[280px] hover:bg-primary transition-colors duration-500">
+          <div key={idx} className="group bg-white p-12 flex flex-col items-start justify-between min-h-[280px] hover:bg-primary transition-colors duration-500 border border-gray-100">
             <div className="w-full">
                 <span className="text-[10px] uppercase tracking-widest text-gray-400 group-hover:text-accent transition-colors duration-300 mb-4 block">
                     {partner.category}

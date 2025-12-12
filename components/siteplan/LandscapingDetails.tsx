@@ -45,7 +45,7 @@ export const LandscapingDetails: React.FC = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
         {features.map((item, idx) => (
           <div key={idx} className="group cursor-pointer">
             <div className="relative h-80 overflow-hidden mb-8">

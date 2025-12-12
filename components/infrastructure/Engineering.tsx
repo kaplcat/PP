@@ -26,7 +26,7 @@ export const Engineering: React.FC = () => {
           </p>
         </div>
 
-        <div className="lg:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-12">
+        <div className="lg:w-2/3 grid grid-cols-2 md:grid-cols-3 gap-10">
           {specs.map((item, idx) => (
             <div key={idx} className="group">
               <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center mb-6 text-accent group-hover:bg-accent group-hover:text-white transition-all duration-300">

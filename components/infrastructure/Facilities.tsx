@@ -41,7 +41,7 @@ export const Facilities: React.FC = () => {
         <h2 className="font-serif text-4xl md:text-5xl text-primary mt-6">Пространство для жизни</h2>
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
         {facilities.map((item, idx) => (
           <div key={idx} className={`${item.colSpan} group relative h-[400px] lg:h-[500px] overflow-hidden bg-gray-900`}>
             <img 

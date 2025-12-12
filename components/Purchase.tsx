@@ -24,7 +24,7 @@ export const Purchase: React.FC = () => {
         <h2 className="font-serif text-4xl md:text-5xl text-primary mt-6">Ваш путь к дому</h2>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-32">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-32">
         {[
           { title: "100% Оплата", highlight: "-11%", highlightText: "скидка", desc: "Максимальная выгода. Оформление сделки за 7 дней." },
           { title: "Рассрочка", highlight: "0%", highlightText: "переплата", desc: "Гибкий график платежей до 24 месяцев. Первый взнос от 10%." },

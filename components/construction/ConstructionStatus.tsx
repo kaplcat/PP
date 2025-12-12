@@ -11,7 +11,7 @@ const metrics = [
 export const ConstructionStatus: React.FC = () => {
   return (
     <Section className="bg-primary text-white border-b border-white/5">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
         <div className="lg:col-span-4">
           <span className="text-accent text-xs font-bold uppercase tracking-[0.25em] mb-6 block">Статус</span>
           <h2 className="font-serif text-4xl lg:text-5xl leading-tight mb-6">
@@ -23,7 +23,7 @@ export const ConstructionStatus: React.FC = () => {
           </p>
         </div>
 
-        <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+        <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-12">
           {metrics.map((item, idx) => (
             <div key={idx} className="group">
               <div className="flex justify-between items-end mb-4">
