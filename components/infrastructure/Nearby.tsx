@@ -4,42 +4,42 @@ import { Car, ShoppingBag, GraduationCap, Utensils, Waves, Landmark, ArrowRight 
 
 const places = [
   { 
-    time: "8 мин", 
+    time: "5 мин", 
     category: "Природа", 
     title: "Истринское водохранилище", 
     icon: Waves, 
     desc: "Пляжи, яхт-клубы, вейк-парки и рестораны у воды." 
   },
   { 
-    time: "15 мин", 
+    time: "20 мин", 
     category: "Культура", 
     title: "Ново-Иерусалимский музей", 
     icon: Landmark, 
     desc: "Один из крупнейших музейных комплексов в России." 
   },
   { 
-    time: "20 мин", 
+    time: "35 мин", 
     category: "Образование", 
     title: "Павловская Гимназия", 
     icon: GraduationCap, 
     desc: "Премиальное образование и всестороннее развитие детей." 
   },
   { 
-    time: "12 мин", 
+    time: "20 мин", 
     category: "Гастрономия", 
     title: "Сыроварня & Рестораны", 
     icon: Utensils, 
     desc: "Фермерские продукты, авторская кухня и уютные кофейни." 
   },
   { 
-    time: "25 мин", 
+    time: "30 мин", 
     category: "Шопинг", 
     title: "Novaya Riga Outlet", 
     icon: ShoppingBag, 
     desc: "Брендовые бутики, супермаркеты и развлечения." 
   },
   { 
-    time: "50 мин", 
+    time: "55 мин", 
     category: "Транспорт", 
     title: "Москва (МКАД)", 
     icon: Car, 
@@ -62,7 +62,7 @@ export const Nearby: React.FC = () => {
           </h2>
         </div>
         <p className="text-gray-500 font-light max-w-md text-sm md:text-base leading-relaxed pb-2">
-          Вам не придется выбирать между тишиной природы и городским комфортом. Все необходимое для жизни высокого класса находится в 15-20 минутах езды.
+          Вам не придется выбирать между тишиной природы и городским комфортом. Все необходимое для жизни высокого класса находится в 15-30 минутах езды.
         </p>
       </div>
 

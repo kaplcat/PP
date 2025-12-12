@@ -35,7 +35,7 @@ export const Location: React.FC = () => {
               <div>
                 <h4 className="text-xl font-serif mb-2 group-hover:text-accent transition-colors">Новая Рига</h4>
                 <p className="text-gray-400 font-light text-sm leading-relaxed">
-                  Скоростное шоссе без светофоров. 50 минут комфортной езды от МКАД до ворот вашего дома.
+                  Скоростное шоссе без светофоров. 55 минут комфортной езды от МКАД до ворот вашего дома.
                 </p>
               </div>
             </div>
@@ -55,7 +55,7 @@ export const Location: React.FC = () => {
               <div>
                 <h4 className="text-xl font-serif mb-2 group-hover:text-accent transition-colors">Вода и Лес</h4>
                 <p className="text-gray-400 font-light text-sm leading-relaxed">
-                  8 км до Истринского водохранилища. Поселок окружен 1200 га заповедного лесного массива.
+                  500 метров до Истринского водохранилища. Поселок окружен 1200 га заповедного лесного массива.
                 </p>
               </div>
             </div>
@@ -64,7 +64,7 @@ export const Location: React.FC = () => {
           <div className="mt-16 pt-8 border-t border-white/10 flex justify-between items-center">
             <div className="flex items-center gap-3">
               <Navigation className="text-accent" />
-              <span className="text-sm tracking-wide">55.9876° N, 36.8765° E</span>
+              <span className="text-sm tracking-wide">56.0305° N, 36.6993° E</span>
             </div>
             <button className="text-xs uppercase tracking-widest border border-white/20 px-6 py-3 hover:bg-white hover:text-primary transition-all">
               Маршрут
