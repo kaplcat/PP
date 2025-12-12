@@ -18,7 +18,7 @@ export const Contacts: React.FC = () => {
   return (
     <>
       <footer id="contacts" className="bg-[#151b22] text-white pt-32 pb-12 relative overflow-hidden">
-          <div className="max-w-[1400px] mx-auto px-6 md:px-10">
+          <div className="max-w-[1200px] mx-auto px-5">
               {/* Top Section: CTA */}
               <div className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-24 pb-24 border-b border-white/10">
                   <h2 className="font-serif text-6xl md:text-8xl leading-none tracking-tight mb-12 lg:mb-0">
@@ -35,7 +35,7 @@ export const Contacts: React.FC = () => {
                       </a>
                       <button 
                           onClick={() => setIsModalOpen(true)}
-                          className="mt-4 px-10 py-5 bg-white text-primary rounded-full font-medium uppercase tracking-widest text-xs hover:bg-accent hover:text-white transition-all duration-300"
+                          className="mt-4 px-10 py-5 bg-white text-primary font-medium uppercase tracking-widest text-xs hover:bg-accent hover:text-white transition-all duration-300"
                       >
                           Заказать звонок
                       </button>

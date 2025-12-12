@@ -16,7 +16,7 @@ export const Infrastructure: React.FC = () => {
       <InfraHero />
       
       {/* Intro Text */}
-      <section className="py-24 max-w-[1400px] mx-auto px-6 md:px-12 text-center">
+      <section className="py-24 max-w-[1200px] mx-auto px-5 text-center">
         <p className="text-xl md:text-3xl font-serif text-primary italic max-w-4xl mx-auto leading-relaxed">
           "Мы создали экосистему, где городской комфорт встречается с тишиной природы. 
           Каждая деталь инфраструктуры продумана для того, чтобы вы могли наслаждаться жизнью, не отвлекаясь на бытовые вопросы."

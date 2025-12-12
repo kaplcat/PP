@@ -26,7 +26,7 @@ const features = [
 export const LandscapingDetails: React.FC = () => {
   return (
     <Section className="bg-white">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-32 mb-24">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-24">
         <div>
           <span className="text-accent text-xs font-bold uppercase tracking-[0.25em] mb-6 block">Благоустройство</span>
           <h2 className="font-serif text-4xl md:text-5xl text-primary leading-tight mb-8">

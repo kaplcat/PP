@@ -11,7 +11,7 @@ const stats = [
 export const Stats: React.FC = () => {
   return (
     <Section id="about">
-      <div className="flex flex-col lg:grid lg:grid-cols-12 gap-10 lg:gap-24 items-start">
+      <div className="flex flex-col lg:grid lg:grid-cols-12 gap-10 items-start">
         {/* Left: Content */}
         <div className="lg:col-span-5 flex flex-col justify-center space-y-16">
           <div>

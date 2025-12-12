@@ -26,7 +26,7 @@ export const FAQ: React.FC = () => {
 
   return (
     <Section id="faq">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
         <div className="lg:col-span-4">
           <span className="text-accent text-xs font-bold uppercase tracking-[0.25em] mb-6 block">FAQ</span>
           <h2 className="font-serif text-4xl lg:text-5xl text-primary leading-tight">

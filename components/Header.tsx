@@ -36,6 +36,16 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
     setIsMobileMenuOpen(false);
   };
 
+  const navItems = [
+    { label: 'О проекте', href: '#about', id: 'about' },
+    { label: 'Генплан', href: '/siteplan', id: 'siteplan' },
+    { label: 'Проекты', href: '/projects', id: 'projects' },
+    { label: 'Ход строительства', href: '/construction', id: 'construction' },
+    { label: 'Инфраструктура', href: '/infrastructure', id: 'infrastructure' },
+    { label: 'Локация', href: '#location', id: 'location' },
+    { label: 'Контакты', href: '#contacts', id: 'contacts' },
+  ];
+
   return (
     <header 
       className={`fixed w-full top-0 z-50 transition-all duration-700 border-b ${
@@ -44,7 +54,7 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
           : 'bg-transparent py-8 border-transparent'
       }`}
     >
-      <div className="max-w-[1600px] mx-auto px-6 md:px-10 flex justify-between items-center">
+      <div className="max-w-[1200px] mx-auto px-5 flex justify-between items-center">
         {/* Logo */}
         <a href="/" onClick={(e) => handleNavClick(e, 'home')} className="relative z-50 group">
           <img 
@@ -56,13 +66,17 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
 
         {/* Desktop Nav */}
         <nav className="hidden xl:flex items-center gap-8">
-          <a href="#about" onClick={(e) => handleNavClick(e, 'about')} className="text-white/80 hover:text-accent font-sans text-xs tracking-[0.2em] uppercase transition-all duration-300 hover:tracking-[0.25em]">О проекте</a>
-          <a href="/siteplan" onClick={(e) => handleNavClick(e, 'siteplan')} className="text-white/80 hover:text-accent font-sans text-xs tracking-[0.2em] uppercase transition-all duration-300 hover:tracking-[0.25em]">Генплан</a>
-          <a href="/projects" onClick={(e) => handleNavClick(e, 'projects')} className="text-white/80 hover:text-accent font-sans text-xs tracking-[0.2em] uppercase transition-all duration-300 hover:tracking-[0.25em]">Проекты</a>
-          <a href="/construction" onClick={(e) => handleNavClick(e, 'construction')} className="text-white/80 hover:text-accent font-sans text-xs tracking-[0.2em] uppercase transition-all duration-300 hover:tracking-[0.25em]">Ход строительства</a>
-          <a href="/infrastructure" onClick={(e) => handleNavClick(e, 'infrastructure')} className="text-white/80 hover:text-accent font-sans text-xs tracking-[0.2em] uppercase transition-all duration-300 hover:tracking-[0.25em]">Инфраструктура</a>
-          <a href="#location" onClick={(e) => handleNavClick(e, 'location')} className="text-white/80 hover:text-accent font-sans text-xs tracking-[0.2em] uppercase transition-all duration-300 hover:tracking-[0.25em]">Локация</a>
-          <a href="#contacts" onClick={(e) => handleNavClick(e, 'contacts')} className="text-white/80 hover:text-accent font-sans text-xs tracking-[0.2em] uppercase transition-all duration-300 hover:tracking-[0.25em]">Контакты</a>
+          {navItems.map((item) => (
+            <a 
+              key={item.id}
+              href={item.href} 
+              onClick={(e) => handleNavClick(e, item.id)} 
+              className="relative group text-white/80 hover:text-accent font-sans text-xs tracking-[0.2em] uppercase transition-colors duration-300"
+            >
+              {item.label}
+              <span className="absolute left-0 -bottom-2 w-full h-px bg-accent scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left" />
+            </a>
+          ))}
         </nav>
 
         {/* CTA & Mobile Toggle */}
@@ -86,13 +100,16 @@ export const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
       {/* Mobile Menu Overlay */}
       <div className={`fixed inset-0 bg-primary z-40 transition-all duration-700 ease-[cubic-bezier(0.22,1,0.36,1)] ${isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'}`}>
         <div className="h-full flex flex-col justify-center items-center gap-10">
-          <a href="#about" onClick={(e) => handleNavClick(e, 'about')} className="text-3xl md:text-4xl font-serif text-white hover:text-accent transition-all duration-500">О проекте</a>
-          <a href="/siteplan" onClick={(e) => handleNavClick(e, 'siteplan')} className="text-3xl md:text-4xl font-serif text-white hover:text-accent transition-all duration-500">Генплан</a>
-          <a href="/projects" onClick={(e) => handleNavClick(e, 'projects')} className="text-3xl md:text-4xl font-serif text-white hover:text-accent transition-all duration-500">Проекты домов</a>
-          <a href="/construction" onClick={(e) => handleNavClick(e, 'construction')} className="text-3xl md:text-4xl font-serif text-white hover:text-accent transition-all duration-500">Ход строительства</a>
-          <a href="/infrastructure" onClick={(e) => handleNavClick(e, 'infrastructure')} className="text-3xl md:text-4xl font-serif text-white hover:text-accent transition-all duration-500">Инфраструктура</a>
-          <a href="#location" onClick={(e) => handleNavClick(e, 'location')} className="text-3xl md:text-4xl font-serif text-white hover:text-accent transition-all duration-500">Локация</a>
-          <a href="#contacts" onClick={(e) => handleNavClick(e, 'contacts')} className="text-3xl md:text-4xl font-serif text-white hover:text-accent transition-all duration-500">Контакты</a>
+          {navItems.map((item) => (
+            <a 
+              key={item.id}
+              href={item.href} 
+              onClick={(e) => handleNavClick(e, item.id)} 
+              className="text-3xl md:text-4xl font-serif text-white hover:text-accent transition-all duration-500"
+            >
+              {item.label}
+            </a>
+          ))}
           
           <a 
             href="tel:+74951254125" 

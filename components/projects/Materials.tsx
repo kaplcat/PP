@@ -28,7 +28,7 @@ const materials = [
 export const Materials: React.FC = () => {
   return (
     <Section className="bg-white">
-      <div className="flex flex-col lg:flex-row gap-16 lg:gap-32">
+      <div className="flex flex-col lg:flex-row gap-10">
         <div className="lg:w-1/3">
           <span className="text-accent text-xs font-bold uppercase tracking-[0.25em] mb-6 block">Качество</span>
           <h2 className="font-serif text-4xl lg:text-5xl text-primary leading-tight mb-8">

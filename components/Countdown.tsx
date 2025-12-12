@@ -64,14 +64,15 @@ export const Countdown: React.FC = () => {
               Плановое повышение стоимости на 2% в конце месяца. Зафиксируйте цену сегодня, чтобы сохранить выгодные условия.
             </p>
 
-            <div className="flex flex-wrap gap-8 lg:gap-16 mb-12">
+            <div className="flex flex-wrap gap-8 lg:gap-12 mb-12">
               {[
                 { label: 'Дней', value: timeLeft.days },
                 { label: 'Часов', value: timeLeft.hours },
                 { label: 'Минут', value: timeLeft.minutes },
+                { label: 'Секунд', value: timeLeft.seconds },
               ].map((item, idx) => (
                 <div key={idx} className="flex flex-col">
-                  <span className="font-serif text-5xl lg:text-7xl font-light">{item.value.toString().padStart(2, '0')}</span>
+                  <span className="font-serif text-5xl lg:text-7xl font-light tabular-nums">{item.value.toString().padStart(2, '0')}</span>
                   <span className="uppercase tracking-widest text-xs text-accent mt-2">{item.label}</span>
                 </div>
               ))}

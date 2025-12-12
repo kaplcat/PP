@@ -17,7 +17,7 @@ export const ProjectsCTA: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent opacity-90" />
       </div>
 
-      <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-12 py-32 lg:py-48">
+      <div className="relative z-10 max-w-[1200px] mx-auto px-5 py-32 lg:py-48">
         <div className="flex flex-col items-center text-center">
           
           <span className="text-white/80 text-xs font-bold uppercase tracking-[0.3em] mb-8 border border-white/20 px-4 py-2 rounded-full backdrop-blur-md">

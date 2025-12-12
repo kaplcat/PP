@@ -14,7 +14,7 @@ const specs = [
 export const Engineering: React.FC = () => {
   return (
     <Section id="engineering" dark className="bg-primary border-t border-white/5">
-      <div className="flex flex-col lg:flex-row gap-16 lg:gap-32">
+      <div className="flex flex-col lg:flex-row gap-10">
         <div className="lg:w-1/3">
           <span className="text-accent text-xs font-bold uppercase tracking-[0.25em] mb-6 block">Инженерия</span>
           <h2 className="font-serif text-4xl lg:text-5xl text-white leading-tight mb-8">

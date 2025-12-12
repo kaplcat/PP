@@ -16,7 +16,7 @@ export const ConstructionHero: React.FC = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent" />
       </div>
 
-      <div className="relative z-10 h-full flex flex-col justify-center max-w-[1600px] mx-auto px-6 md:px-12 pt-20">
+      <div className="relative z-10 h-full flex flex-col justify-center max-w-[1200px] mx-auto px-5 pt-20">
         <div className="max-w-5xl">
           <div className="flex items-center gap-6 mb-8 animate-fade-in-up opacity-0" style={{ animationDelay: '0.2s' }}>
             <span className="h-[1px] w-12 bg-accent/80" />

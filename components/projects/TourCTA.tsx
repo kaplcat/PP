@@ -13,7 +13,7 @@ export const TourCTA: React.FC = () => {
         <div className="absolute inset-0 bg-primary/80 mix-blend-multiply" />
       </div>
 
-      <div className="relative z-10 max-w-[1400px] mx-auto px-6 md:px-10 py-32 lg:py-40">
+      <div className="relative z-10 max-w-[1200px] mx-auto px-5 py-32 lg:py-40">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-16">
           
           <div className="max-w-2xl">
