@@ -6,7 +6,7 @@ export const Atmosphere: React.FC = () => {
     <Section fullWidth className="!py-0 bg-white">
       <div className="flex flex-col lg:flex-row h-auto lg:h-[700px]">
         {/* Left: Text Content */}
-        <div className="w-full lg:w-1/3 p-12 lg:p-20 flex flex-col justify-center border-r border-gray-100">
+        <div className="w-full lg:w-1/3 px-5 py-12 xl:px-[40px] xl:py-20 flex flex-col justify-center border-r border-gray-100">
           <span className="text-accent text-xs font-bold uppercase tracking-[0.25em] mb-6 block">Атмосфера</span>
           <h2 className="font-serif text-4xl lg:text-5xl text-primary leading-tight mb-8">
             Утро в лесу, <br/> вечер у камина

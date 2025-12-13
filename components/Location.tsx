@@ -25,7 +25,7 @@ export const Location: React.FC = () => {
         </div>
 
         {/* Info Area */}
-        <div className="w-full lg:w-2/5 bg-primary text-white p-12 lg:p-24 flex flex-col justify-center">
+        <div className="w-full lg:w-2/5 bg-primary text-white px-5 py-12 xl:px-[40px] xl:py-24 flex flex-col justify-center">
           <span className="text-accent text-xs font-bold uppercase tracking-[0.25em] mb-8 block">Локация</span>
           <h2 className="font-serif text-4xl lg:text-5xl mb-12">В центре тишины</h2>
           
